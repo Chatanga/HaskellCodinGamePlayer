@@ -1,4 +1,4 @@
-# CodinGame Haskell Environment
+# A CodinGame Haskell Environment
 
 Today, one of the reasons why CodinGame sticks to an old version of Haskell (GHC 8.4.3)
 is that the [Haskell Platform](https://www.haskell.org/platform/) stopped providing anything outside the core package.
@@ -57,6 +57,6 @@ In the `package.yaml` file (`stack.yaml` simply specifies the LTS version used h
 	- transformers
 	- unordered-containers
 	- vector
-	
+
 That a pretty decent set of package to code a great bot I think.
 Of course, other packages could be added if wanted ('linear' would be a great addition for some contests).
