@@ -10,9 +10,9 @@ I won't present it in details here, suffice to say it's a popular tool aiming at
 (by managing both the project dependencies and the build tools such as GHC itself).
 It is based on [Stackage](https://www.stackage.org/) which is a curated list of packages from Hackage providing a set of versions known to works well with each other.
 For instance, the LTS 17.9 from Stackage is the latest stable set of package using GHC 8.10.4.
-Stack is not the only tool around however and using Cabal and/or NyxOS are legitimate approachs as well.
-In fact Stack, Cabal, NyxOS and others are not exclusive and can often be combined.
-For instance, Stack understands Cabal files (they use the same internal cabal library from GHC after all) and offers a direct support for Nyx containerization if needed.
+Stack is not the only tool around however and using Cabal and/or NixOS are legitimate approachs as well.
+In fact Stack, Cabal, NixOS and others are not exclusive and can often be combined.
+For instance, Stack understands Cabal files (they use the same internal cabal library from GHC after all) and offers a direct support for Nix containerization if needed.
 
 So, what would it look like to use Stack at CodinGame to unlock newer versions of GHC and fine tune the available packages?
 
@@ -35,7 +35,7 @@ stack exec player
 ```
 
 The first time this project is build could take some times since Stack will download and compile any dependencies
-(the Haskell part at least, wrapped native libraries, if any, need to be installed separately, hence the need of things such as NyxOS).
+(the Haskell part at least, wrapped native libraries, if any, need to be installed separately, hence the need of things such as NixOS).
 Of course, that's just the first time.
 
 The last command launchs the program in a properly configured environnement (a bit like `chroot` for instance).
