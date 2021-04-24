@@ -1,0 +1,24 @@
+name: HaskellCodinGamePlayer
+
+dependencies:
+- ghc
+- array
+- base
+- bytestring
+- containers
+- deepseq
+- hashable
+- integer-logarithms
+- mtl
+- parsec
+- pretty
+- text
+- time
+- transformers
+- unordered-containers
+- vector
+
+executables:
+  player:
+    main: Player.hs
+    source-dirs: src
