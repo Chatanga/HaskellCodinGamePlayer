@@ -3,7 +3,7 @@
 Today, one of the reasons why CodinGame sticks to an old version of Haskell (GHC 8.4.3)
 is that the [Haskell Platform](https://www.haskell.org/platform/) stopped providing anything outside the core package.
 In turn, the reason why Haskell Platform made this choice is the lack of consensus on which packages must be part of the "platform".
-A divise question considering that [Hackage](https://hackage.haskell.org/) could be a wild place with many packages doing the same thing with different approachs.
+A divisive question considering that [Hackage](https://hackage.haskell.org/) could be a wild place with many packages doing the same thing with different approachs.
 
 A leaner way to develop in Haskell is using [Stack](https://docs.haskellstack.org/en/stable/README/).
 I won't present it in details here, suffice to say it's a popular tool aiming at reproducible builds
