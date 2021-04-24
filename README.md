@@ -59,4 +59,4 @@ In the `package.yaml` file (`stack.yaml` simply specifies the LTS version used h
 	- vector
 
 That a pretty decent set of package to code a great bot I think.
-Of course, other packages could be added if wanted ('linear' would be a great addition for some contests).
+Of course, other packages could be added if wanted ([linear](https://hackage.haskell.org/package/linear/) would be a great addition for some contests).
