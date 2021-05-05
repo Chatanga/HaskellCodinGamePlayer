@@ -18,7 +18,7 @@ So, what would it look like to use Stack at CodinGame to unlock newer versions o
 
 First, Stack needs to be installed:
 
-```bash
+``` bash
 curl -sSL https://get.haskellstack.org/ | sh
 ```
 
@@ -28,7 +28,7 @@ but having it around shouldn't interfere either (Stack being some kind of sandbo
 
 This GitHub project could then be used as the Stack project for any player submission:
 
-```
+``` bash
 git clone https://github.com/Chatanga/HaskellCodinGamePlayer.git
 cd HaskellCodinGamePlayer
 stack build
