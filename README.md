@@ -30,6 +30,7 @@ This GitHub project could then be used as the Stack project for any player submi
 
 ```
 git clone https://github.com/Chatanga/HaskellCodinGamePlayer.git
+cd HaskellCodinGamePlayer
 stack build
 stack exec player
 ```
@@ -60,3 +61,32 @@ In the `package.yaml` file (`stack.yaml` simply specifies the LTS version used h
 
 That a pretty decent set of package to code a great bot I think.
 Of course, other packages could be added if wanted ([linear](https://hackage.haskell.org/package/linear/) would be a great addition for some contests).
+
+## Recycling a project's sandbox
+
+After the first build, the Stack project contains a sandboxed environment with GHC and all the listed dependencies.
+An Internet connection is no more required and the sandbox could be reused to compile a player submission:
+
+``` bash
+pushd .../HaskellCodinGamePlayer
+stack exec ghc -- -w -O1 /tmp/Answer.hs -o /tmp/Answer
+popd
+```
+
+Then execute it:
+
+``` bash
+pushd .../HaskellCodinGamePlayer
+stack exec /tmp/Answer
+popd
+```
+
+Alternatively, it is possible to run a whole bash inside the sandbox to build & run anything:
+
+``` bash
+cd .../HaskellCodinGamePlayer
+stack exec bash
+ghc --version
+...
+exit
+```
